@@ -1,0 +1,99 @@
+.row{
+	width:100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+	height:auto;
+}
+.col{
+	float:left;
+	position: relative;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.column-left{
+	width:25%;
+	background-color:#eeeeee;
+	
+}
+.column-right {
+	right:0;
+	position:fixed;
+	width:64%;
+	margin-left:10px;
+
+
+	
+}
+
+/* Player Tabs */
+#playerList{
+
+}
+.playerListContainer{
+	width:100%;
+	height:100%;
+}
+#playerList li{
+	list-style-type: none;
+	height:auto;
+	border:1px solid grey;
+	border-radius:5px;
+	margin:10px;
+	padding:10px;
+	opacity:0.8;
+	background-color:#ffffff;
+}
+#playerList li:hover{
+
+	opacity:1.0;
+	cursor:pointer;
+}
+#playerList li img{
+	width:25%;
+	height:auto;
+	vertical-align: bottom;
+	border: 2px solid white;
+	border-radius:5px;
+}
+#playerList li .name{
+	font-size:20px;
+	color:black;
+	vertical-align:middle;
+	text-align:center;
+
+}
+#playerList li .number{
+	color:#04529C;
+}
+.largeImage{
+	
+	height:100px;
+	width:auto;
+}
+.table-bordered{
+	border-collapse: collapse;
+
+}
+.table-bordered th, .table-bordered td{
+	padding:5px;
+	border-left:1px solid black;
+	border-right:1px solid black;
+	text-align: center;
+	
+
+
+}
+.table-bordered th{
+	background-color:#04529C;
+	color:#FFFFFF;
+	font-weight: normal;
+}
+.table-bordered td{
+	border-bottom:1px solid black;
+	
+}
+
+
