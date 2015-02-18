@@ -32,7 +32,7 @@ var Player = function (name, team, conference, image, number,pos,gp, mpg, fgmfga
 
 
 Player.prototype.showStats = function(){
-	document.getElementById("statsArea").innerHTML = "<div class='playerCard'><h2><img src='"+this.image+"' class='largeImage'/>"+this.name+"</h2><hr /><p><table class='table-bordered'><tr><th>GP</th><th>MPG</th><th>FGM-FGA</th><th>FG%</th><th>3PM-3PA</th><th>3P%</th><th>FTM-FTA</th><th>FT%</th><th>RPG</th><th>APG</th><th>BLKPG</th><th>STLPG</th><th>TOPG</th><th>PPG</th> </tr><tr><td>"+this.gp+"</td><td>"+this.mpg+"</td><td>"+this.fgmfga+"</td><td>"+this.fgp+"</td><td>"+this.tpmtpa+"</td><td>"+this.tpp+"</td><td>"+this.ftmfta+"</td><td>"+this.ftp+"</td><td>"+this.rpg+"</td><td>"+this.apg+"</td><td>"+this.blkpg+"</td><td>"+this.stlpg+"</td><td>"+this.topg+"</td><td>"+this.ppg+"</td></tr></table></p></div>";	
+	document.getElementById("statsArea").innerHTML = "<div class='playerCard'><h2><img src='"+this.image+"' class='largeImage'/>"+this.name+"&nbsp;#<span class='number'>"+this.number+"&nbsp;"+this.pos+"</span></h2><hr /><p><table class='table-bordered'><tr><th>GP</th><th>MPG</th><th>FGM-FGA</th><th>FG%</th><th>3PM-3PA</th><th>3P%</th><th>FTM-FTA</th><th>FT%</th><th>RPG</th><th>APG</th><th>BLKPG</th><th>STLPG</th><th>TOPG</th><th>PPG</th> </tr><tr><td>"+this.gp+"</td><td>"+this.mpg+"</td><td>"+this.fgmfga+"</td><td>"+this.fgp+"</td><td>"+this.tpmtpa+"</td><td>"+this.tpp+"</td><td>"+this.ftmfta+"</td><td>"+this.ftp+"</td><td>"+this.rpg+"</td><td>"+this.apg+"</td><td>"+this.blkpg+"</td><td>"+this.stlpg+"</td><td>"+this.topg+"</td><td>"+this.ppg+"</td></tr></table></p></div>";	
 
 }
 
@@ -58,7 +58,7 @@ function displayPlayers(){
 		//listItem.onclick = "";
 		
 		listItem.setAttribute('onclick','players['+i+'].showStats();')
-		listItem.innerHTML = "<img src="+players[i].image+" /><span class='number'>" + players[i].number + "&nbsp;  &nbsp; " + players[i].pos + "</span><br /><span class='name'>" + players[i].name + "</span>";
+		listItem.innerHTML = "<img src="+players[i].image+" /><span class='number'>#" + players[i].number + "&nbsp;  &nbsp; " + players[i].pos + "</span><br /><span class='name'>" + players[i].name + "</span>";
 		document.getElementById("playerList").appendChild(listItem);
 
 	}
